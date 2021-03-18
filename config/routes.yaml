@@ -1,3 +1,14 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+user_api_create:
+  path: /api/user/create
+  controller: App\Controller\UserController:create
+  methods: [POST]
+
+user_api_edit:
+  path: /api/user/{id}
+  controller: App\Controller\UserController:edit
+  methods: [GET]
+
+user_api_update:
+  path: /api/user/update
+  controller: App\Controller\UserController:update
+  methods: [POST]

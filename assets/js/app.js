@@ -1,6 +1,19 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Home from './components/home';
 
-import '../css/app.css';
+import '../scss/app.scss';
+
+class App extends React.Component {
+    render() {
+        return (
+            <BrowserRouter>
+                <Route path="/:id?" component={Home} />
+            </BrowserRouter>
+        )
+    }
+}
 
 
-
-console.log("Hello world");
+ReactDOM.render(<App/>, document.getElementById('root'));
