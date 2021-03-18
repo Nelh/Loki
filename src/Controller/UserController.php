@@ -34,7 +34,6 @@ class UserController extends AbstractController
     public function create(Request $request, MailerInterface $mailer, $appEmail, $appLink): JsonResponse
     {
         $content = json_decode($request->getContent());
-
         $validations = new ValidationHelper();
         $validations->name('name')->value($content->name)->pattern('alpha')->required();
         $validations->name('surname')->value($content->surname)->pattern('alpha')->required();

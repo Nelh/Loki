@@ -40,8 +40,10 @@ class Home extends React.Component {
             })
             .then((response) => response.json())
             .then(data => {
-                this.setState({fields:data});
-                this.setState({user_id:data.id});
+                this.setState({
+                    fields:data,
+                    user_id:data.id
+                });
             });
         }
     }
@@ -49,7 +51,7 @@ class Home extends React.Component {
     componentDidUpdate() {
         const timer = setTimeout(() => {
             document.querySelector('.toast').style.display = "none";
-        }, 10000);
+        }, 5000);
 
         this.state.actions.actioned === true ? timer : '';
     }
@@ -116,7 +118,6 @@ class Home extends React.Component {
                         actions:data.actions
                     })
                     if(data.code == 0) {
-                        // reset the forms
                         let fields = {};
                         fields["name"] = "";
                         fields["surname"] = "";
@@ -176,7 +177,6 @@ class Home extends React.Component {
         }
 
         if (typeof fields["email"] !== "undefined") {
-            //regular expression for email validation
             var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
             if (!pattern.test(fields["email"])) {
             formIsValid = false;
