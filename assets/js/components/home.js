@@ -5,11 +5,11 @@ class Home extends React.Component {
       super();
       this.state = {
         fields: {
-            name : 'Nelh',
-            surname: 'Amstrong',
-            email: 'nelhamstron9@gmail.cim',
-            password: 'Wireless2018####',
-            confirm_password: 'Wireless2018####',
+            name : '',
+            surname: '',
+            email: '',
+            password: '',
+            confirm_password: '',
             country: 'South-Africa',
             colour: '',
             birthday: '',
