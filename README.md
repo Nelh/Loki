@@ -131,14 +131,16 @@ symfony server:start
 - Add your project url to the .env, that will serve to redirect to the user form.
 
 ```javascript
+
+// APP_LINK=http://127.0.0.1:...
 APP_LINK=
 
-ie // APP_LINK=http://127.0.0.1:...
 ```
 
 - Additional params to add in the .env
 
 ```javascript
+// EMAIL_TO=nelhamstrong9@gmail.com
 EMAIL_TO=
 ```
 
