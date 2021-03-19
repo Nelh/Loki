@@ -89,7 +89,15 @@ DB_PASSWORD=
 DB_NAME=
 
 ```
-- make sure your db_name have the right verison
+- Make sure you use the right database version, if you using mysql instead of mariadb change it in the .env and replace with your database version.
+
+```javascript
+// serverVersion=mariadb-10.4.18"
+
+DATABASE_URL="mysql://$DB_USERNAME:$DB_PASSWORD@$DB_HOST/$DB_NAME?serverVersion=mariadb-10.4.18"
+
+```
+
 
 - you need a smtp server for the emails.
 
