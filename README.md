@@ -2,10 +2,6 @@
 
 ## Simple Form with symfony, react and Bootstrap 5
 
-## video project 
-
-(https://youtu.be/vCvenEqqGhY)[https://youtu.be/vCvenEqqGhY]
-
 
 ![Optional Text](/assets/images/image-1.png)
 
