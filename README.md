@@ -5,21 +5,6 @@
 
 ![Optional Text](/assets/images/image-1.png)
 
-## Description
-
-I created this small Project using React and Symfony. it utilize a small Api that process the data on the server. 
-In the Frontend i use bootstrap 5 to speed up my development process and not focusing my attention on the styling first but rather the logic. I also integrated sass and webpack  to compile and bundle my styling even though i didn't use it much.
-That allowed me to maximise the time that i had to focus on the logic and the validation. 
-
-I used react to create a simple SPA that will handle to creating and updating of the user and the same page used the state to control the flow of the data within the App. 
-
-I also set the validation rules on the frontend so that in case the user forget to fill out a form the data don't get process to the server.
-
-In case the first layer failed, i've added another validation as required in the assessment briefing, so that we are sure the data that we are processing is valid.
-
-when the user registered and pass all the validation requirement, an email get sent to the administrator, (ref to installation below) and the admin can click the link and get redirected to the website.
-
-When i sent the email, i'm just sending the id attached to the url, and on to the application my url has an optional parameter is used to check if the user is valid and i'm returning the data as a json so that it can be processed on the frontend.
 
 
 ## Requirement
